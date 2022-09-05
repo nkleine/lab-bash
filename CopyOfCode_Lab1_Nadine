@@ -1,0 +1,288 @@
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~
+$ cd lab-bash
+bash: cd: lab-bash: No such file or directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~
+$ cd IH-Labs
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs
+$ cd lab-bash
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ echo 'Hello world'
+Hello world
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ mkdir new_dir
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ ls
+exercices/  inputs/  lorem/  lorem-copy/  new_dir/  outputs/  readme.md
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git add .
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ rm new_dir
+rm: cannot remove 'new_dir': Is a directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ new_dir -r new_dir
+bash: new_dir: command not found
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ rm new_dir
+rm: cannot remove 'new_dir': Is a directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ rm <new_dir>
+bash: syntax error near unexpected token `newline'
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ rm new_dir
+rm: cannot remove 'new_dir': Is a directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git rm new_dir
+fatal: pathspec 'new_dir' did not match any files
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ rmdir new_dir
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ dir
+exercices  inputs  lorem  lorem-copy  outputs  readme.md
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cp sed.txt lorem-copy
+cp: cannot stat 'sed.txt': No such file or directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cp lorem/sed.txt lorem-copy/
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ dir
+exercices  inputs  lorem  lorem-copy  outputs  readme.md
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem-copy
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ dir
+dummy_file.txt  sed.txt
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ cd lorem
+bash: cd: lorem: No such file or directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ cd lorem
+bash: cd: lorem: No such file or directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ cd .
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ cd ..
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ dir
+at.txt  at.txte  lorem.txt  sed.txt
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ at.txt lorem-copy
+bash: at.txt: command not found
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cp lorem/at.txt lorem-copy
+cp: cannot stat 'lorem/at.txt': No such file or directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cp lorem/lorem.txt lorem-copy
+cp: cannot stat 'lorem/lorem.txt': No such file or directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cd ..
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem/at.txt lorem-copy/
+bash: cd: too many arguments
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lored/at.txt lorem-copy; cop lorem/lorem-txt lorem-copy
+bash: cd: too many arguments
+bash: cop: command not found
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cp lorem/at.txt lorem-copy; cp lorem/lorem-txt lorem-copy
+cp: cannot stat 'lorem/lorem-txt': No such file or directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cp lorem/at.txt lorem-copy; cp lorem/lorem.txt lorem-copy
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cat sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cat at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cat lorem.txt
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ head -3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cd ..
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem_copy
+bash: cd: lorem_copy: No such file or directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem-copy
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ head -3 sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ Homo homini lupus sed.txt
+bash: Homo: command not found
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ echo 'Homo homini lupus' sed.txt
+Homo homini lupus sed.txt
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ tail sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ tail -3 sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem-copy (master)
+$ cd ..
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cd ..
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git add .
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   lorem-copy/at.txt
+        new file:   lorem-copy/lorem.txt
+        new file:   lorem-copy/sed.txt
+
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git push
+Everything up-to-date
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git add .
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   lorem-copy/at.txt
+        new file:   lorem-copy/lorem.txt
+        new file:   lorem-copy/sed.txt
+
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git commit -m 'comment'
+[master 3eac116] comment
+ 3 files changed, 23 insertions(+)
+ create mode 100644 lorem-copy/at.txt
+ create mode 100644 lorem-copy/lorem.txt
+ create mode 100644 lorem-copy/sed.txt
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.62 KiB | 1.62 MiB/s, done.
+Total 6 (delta 1), reused 2 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nkleine/lab-bash.git
+   689f07d..3eac116  master -> master
