@@ -286,3 +286,211 @@ Total 6 (delta 1), reused 2 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/nkleine/lab-bash.git
    689f07d..3eac116  master -> master
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs
+$ cd lab-bash
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls .txt
+ls: cannot access '.txt': No such file or directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls txt
+ls: cannot access 'txt': No such file or directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls text
+ls: cannot access 'text': No such file or directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ dir *.txt
+at.txt  lorem.txt  sed.txt
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cd ..
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ wc -l
+
+
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cd ..
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ ls -dq *lorem* | wc -l
+2
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cat sed.txt | wc -l
+9
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cd ..
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git add .
+warning: in the working copy of 'lorem/at.txt', LF will be replaced by CRLF the next time Git touches it
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git commit -m 'finished lab'
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ pit push
+bash: pit: command not found
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git push
+To https://github.com/nkleine/lab-bash.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/nkleine/lab-bash.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 1 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 2.93 KiB | 250.00 KiB/s, done.
+From https://github.com/nkleine/lab-bash
+   3eac116..d569fb2  master     -> origin/master
+Updating 3eac116..d569fb2
+Fast-forward
+ CopyOfCode_Lab1_Nadine | 288 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 288 insertions(+)
+ create mode 100644 CopyOfCode_Lab1_Nadine
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git push
+Everything up-to-date
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs
+$ cd lab-bash
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls .txt
+ls: cannot access '.txt': No such file or directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls txt
+ls: cannot access 'txt': No such file or directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ ls text
+ls: cannot access 'text': No such file or directory
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ dir *.txt
+at.txt  lorem.txt  sed.txt
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cd ..
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ wc -l
+
+
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cd ..
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ ls -dq *lorem* | wc -l
+2
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ cd lorem
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cat sed.txt | wc -l
+9
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash/lorem (master)
+$ cd ..
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git add .
+warning: in the working copy of 'lorem/at.txt', LF will be replaced by CRLF the next time Git touches it
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git commit -m 'finished lab'
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ pit push
+bash: pit: command not found
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git push
+To https://github.com/nkleine/lab-bash.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/nkleine/lab-bash.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git pull
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 1 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 2.93 KiB | 250.00 KiB/s, done.
+From https://github.com/nkleine/lab-bash
+   3eac116..d569fb2  master     -> origin/master
+Updating 3eac116..d569fb2
+Fast-forward
+ CopyOfCode_Lab1_Nadine | 288 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 288 insertions(+)
+ create mode 100644 CopyOfCode_Lab1_Nadine
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$ git push
+Everything up-to-date
+
+Nadine Kleine@LAPTOP-39LJCG1I MINGW64 ~/IH-Labs/lab-bash (master)
+$
